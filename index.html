@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/645a31d7a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+        
+                <ul id="sidemenu">
+                    <li><a href="#header" class="link"><div class="text">Home</div></a></li>
+                    <li><a href="#about" class="link"><div class="text">About</div></a></li>
+                    <li><a href="#courses" class="link"><div class="text">Courses</div></a></li>
+                    <li><a href="#portfolio" class="link"><div class="text">Portfolio</div></a></li>
+                    <li><a href="#contact" class="link"><div class="text">Contact</div></a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>
+                    <div class="word">
+                        <span>Hi,</span>
+                        <span> I'm </span>
+                        <span class="red">Tejo</span>
+                        <span>prasanth</span>
+                        <br><span> from Raghu Institute of Technology</span>
+                    </div>
+                </h1>
+                <p>Software Developer & UI/UX Designer</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a passionate and hardworking skilled individual with a passion for developing inniovative software solutions.Proficient in various programming languages including C, Python, Java, JS, HTML and CSS with experience in developing web applications.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br> Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br> Web Application Development </li>
+                            <li><span>Programming</span><br> C, Python, JAVA</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br> 2021-2025</li>
+                            <li><span>Intermediate</span><br> 2019-2021 </li>
+                            <li><span>Secondary education</span><br>2018</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------Courses---------------------------->
+    <div id="courses">
+        <div class="container">
+            <h1 class="sub-title">My Courses</h1>
+            <div class="courses-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2><br>
+                    <p>Web design involves creating the visual elements and layout of a website, while coding involves translating these designs into a functional website using programming languages like HTML, CSS, and JavaScript.</p>
+                    <a href="https://www.udemy.com/topic/web-design/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Programming</h2><br>
+                    <p>Python is a computer programming language often used to build websites and software, automate tasks, and analyze data. Python is a general-purpose language, not specialized for any specific problems, and used to create various programmes.</p>
+                    <a href="https://www.python.org/about/gettingstarted/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>JAVA</h2><br>
+                    <p>Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding everything from mobile apps and enterprise software to big data applications and server-side technologies.</p>
+                    <a href="https://www.java.com/en/download/help/whatis_java.html">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--------portfolio--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/calc.jpg" alt="work1">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>The most basic calculator is the four-function calculator, which can perform basic arithmetic such as addition, subtraction, multiplication and division. These are sometimes called pocket calculators or hand-held electronic calculators because they are small enough to fit in a shirt pocket.</p>
+                        <a href="https://www.online-calculator.com/"><i class="fa-solid fa-calculator"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/music.jpg" alt="work2">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <p>Music players is sofware that enables a device to play audio files, such as MP3 files, using earphones or speakers.</p>
+                        <a href="https://open.spotify.com/"><i class="fa-solid fa-music"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/shopping.jpg" alt="work3">
+                    <div class="layer">
+                        <h3>Online shopping</h3>
+                        <p>Online shopping is a form of electronic commerce which allows consumers to directly buy goods or services from a seller over the Internet using a web browser or a mobile app.</p>
+                        <a href="https://www.amazon.in/"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <a href="">
+                    
+                    See more
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <!-----------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>teddutejoprasanth@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9010515109</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/tejo_prasanth/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/tejo-prasanth-7a432b289/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Tejo-prasanth"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    
+                        <a href="images/Tejo's Resume (3) (1).pdf" class="btn">Download CV</a>
+                
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Tejo prasanth.</p>
+            <p><i class="fa-solid fa-globe"></i>    English - India</p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function closemenu(){
+            sidemeu.style.right="-500px";
+        }
+
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+    </script>
+    <script>
+        var links = document.getElementsByClassName('link')
+for(var i = 0; i <= links.length; i++)
+   addClass(i)
+
+
+
+function addClass(id){
+   setTimeout(function(){
+      if(id > 0) links[id-1].classList.remove('hover')
+      links[id].classList.add('hover')
+   }, id*750) 
+}
+    </script>
+<!---------------submit*------->
+
+
+<script>
+    const button =document.querySelector(".submit");
+
+    button.addEventListener("click",(e) =>{
+        e.preventDefault();
+        button.classList.add("animate");
+
+        setTimeout(()=>{
+            button.classList.remove("animate");
+        },600 )
+    })
+</script>
+    
+</body>
+</html>
